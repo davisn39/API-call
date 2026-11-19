@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    background-color: #1f2937;
+    color: #111827;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Top Red Hemisphere + Center Black Seam */
+header {
+    position: relative;
+    background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+    color: #ffffff;
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    border-radius: 32px 32px 0 0;
+    border: 6px solid #111827;
+    border-bottom: 14px solid #111827;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Center Poké Ball Button */
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -31px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border: 8px solid #111827;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4px #e5e7eb, 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #111827;
+    margin-bottom: 0.25rem;
+}
+
+header p {
+    font-weight: 500;
+    color: #fee2e2;
+}
+
+/* Bottom White Hemisphere */
+main {
+    background-color: #ffffff;
+    padding: 3rem 1.5rem 1.75rem 1.5rem;
+    border-radius: 0 0 32px 32px;
+    border: 6px solid #111827;
+    border-top: none;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem;
+}
+
+section {
+    background-color: #f9fafb;
+    padding: 1.25rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 16px;
+    margin-bottom: 1.25rem;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+section h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.85rem;
+    color: #111827;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.35rem;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    color: #374151;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    font-size: 1rem;
+    border: 2px solid #111827;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    background-color: #ffffff;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #dc2626;
+    border: 2px solid #111827;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #b91c1c;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#pokemonResult {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+#pokemonResult h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+#pokemonSprite {
+    width: 165px;
+    height: 165px;
+    object-fit: contain;
+    background: radial-gradient(circle, #ffffff 40%, #f3f4f6 100%);
+    border: 3px solid #111827;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.75rem auto;
+    display: block;
+}
+
+#pokemonResult p {
+    margin: 0.35rem 0;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #d1d5db;
+    padding: 0.5rem;
+}
