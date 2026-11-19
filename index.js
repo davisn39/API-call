@@ -1,3 +1,6 @@
+// I copied what I could from the video and asked gemini to fill in the blanks
+// I then copy and pasted it to my javascrpt
+
 async function fetchData() {
     const resultContainer = document.getElementById("pokemonResult");
 
