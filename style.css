@@ -1,6 +1,5 @@
-// i asked gemini to make up a css style that makes the search look like a pokeball
-// i did this by asking it to only make changes to me css and then copy and pasted it
-
+/* i asked gemini to make up a css style that makes the search look like a pokeball
+/* i did this by asking it to only make changes to me css and then copy and pasted it
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +7,7 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     background-color: #1f2937;
     color: #111827;
